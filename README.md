@@ -66,8 +66,5 @@ Here are some ideas to get you started:
 </div>
 
 <div id="header" align="center">
-  <img src="gifs/2.gif" width="200"/>
+  <img src="gifs/2.gif" width="400"/>
 </div>
-
-## My Snake 
-![snakey](https://raw.githubusercontent.com/YuXiangLo/YuXiangLo.github.io/output/github-contribution-grid-snake-dark.svg)
