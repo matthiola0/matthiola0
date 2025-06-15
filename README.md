@@ -1,6 +1,6 @@
-## Hi there 👋
+<!--## Hi there 👋
 
-<!--
+
 **matthiola0/matthiola0** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
@@ -15,16 +15,18 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<h1 align="center">Hi, I'm Boy 👋 </h1>
+## Hi, I'm Boy 👋 
 
+<!--
 <div id="header" align="center">
   <img src="gifs/1.gif" width="150"/>
 </div>
+-->
 
 
 * 📫 How to reach me: You can email me by <abc35100762@gmail.com>
 
-## Languages and Tools:
+## Languages and Tools
 <div align="left">
  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  /></code>
   <img width="12" />
@@ -65,6 +67,7 @@ Here are some ideas to get you started:
   <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" height="30" alt="vim logo"  /></code>
 </div>
 
+##
 <div id="header" align="center">
   <img src="gifs/2.gif" width="400"/>
 </div>
