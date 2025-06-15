@@ -23,7 +23,10 @@ Here are some ideas to get you started:
 </div>
 -->
 
-
+* 🏫 Master of Science (M.S.) in Computer Science, Expected June 2027
+    * National Cheng Kung University, Tainan, Taiwan
+* 🏫 Bachelor of Science (B.S.) in Interdisciplinary Program of Science, 2025
+    * National Tsing Hau University, Hsinchu, Taiwan
 * 📫 How to reach me: You can email me by <abc35100762@gmail.com>
 
 ## Languages and Tools
