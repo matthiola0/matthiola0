@@ -74,3 +74,6 @@ Here are some ideas to get you started:
 <div id="header" align="center">
   <img src="gifs/2.gif" width="400"/>
 </div>
+
+## My Snake 
+![snakey](https://raw.githubusercontent.com/matthiola0/matthiola0.github.io/output/github-contribution-grid-snake-dark.svg)
