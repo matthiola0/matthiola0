@@ -1,0 +1,50 @@
+name: Update Personal Metrics
+on:
+  # 每天半夜 12 點自動更新
+  schedule: [{cron: "0 0 * * *"}]
+  # 允許手動按鈕觸發
+  workflow_dispatch:
+  # 當有 code 推上主分支時觸發
+  push: {branches: ["master", "main"]}
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # 第一步：生成「GitHub 總體活躍度」 (左邊那張)
+      - name: General Stats
+        uses: lowlighter/metrics@latest
+        with:
+          filename: assets/github-stats.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          
+          # 設定基本資料
+          user: matthiola0  # 請確認這是不是你的 GitHub ID
+          base: header, activity, community, repositories
+          config_timezone: Asia/Taipei
+          
+          # 讓卡片不要太寬，適合並排
+          config_display: regular
+
+      # 第二步：生成「常用語言」 (右邊那張)
+      - name: Language Stats
+        uses: lowlighter/metrics@latest
+        with:
+          filename: assets/languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: matthiola0
+          
+          # 關閉基本資料，只留語言
+          base: ""
+          
+          # 啟用語言插件
+          plugin_languages: yes
+          plugin_languages_ignored: >-
+            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
+            gnuplot, jupyter notebook
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_details: lines, percentage
+          plugin_languages_indepth: yes
