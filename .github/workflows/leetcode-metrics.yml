@@ -33,8 +33,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # 把產生的兩張圖都加入
-          git add leetcode-heatmap.png leetcode-rating.png
+          # 把產生的圖都加入
+          git add assets/*.png
           # 如果圖沒變，就不 Commit (避免報錯)
           git commit -m "Update LeetCode Stats via Alfa API" || exit 0
           git push
