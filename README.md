@@ -71,14 +71,23 @@ My name is Po-Yu Pan. You can call me Boy, as it sounds similar to my Chinese na
   <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" height="30" alt="vim logo"  /></code>
 </div>
 
+<h2>My Algorithm Journey</h2>
 <!--
-## LeetCode
 <p align="center">
   <img src="https://leetcard.jacoblin.cool/Matthiola?theme=dark&font=Inter" width="48%" />
-  
-  <img src="https://leetcode.cl2333.workers.dev/api/render/Matthiola?theme=dark" width="48%" />
 </p>
 -->
+<p align="center">
+  <a href="https://leetcode.com/Matthiola/">
+    <img src="assets/leetcode-rating.png" width="70%" alt="Contest Rating" />
+  </a>
+</p>
+<h3>Submission Activity</h3>
+<p align="center">
+  <a href="https://leetcode.com/Matthiola/">
+    <img src="assets/leetcode-heatmap.png" width="85%" alt="Submission Heatmap" />
+  </a>
+</p>
 
 <!--
 ##
