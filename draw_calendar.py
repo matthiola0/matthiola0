@@ -31,5 +31,5 @@ print("Generating heatmap...")
 fig, ax = calplot.calplot(events, cmap='YlGn', colorbar=False, yearlabels=True)
 
 # 5. 存檔
-plt.savefig("leetcode-heatmap.png", bbox_inches='tight')
+plt.savefig("assets/leetcode-heatmap.png", bbox_inches='tight')
 print("Saved to leetcode-heatmap.png")
