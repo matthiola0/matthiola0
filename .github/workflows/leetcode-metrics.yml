@@ -1,0 +1,31 @@
+name: LeetCode Metrics
+on:
+  # 每天半夜 12 點自動更新 (UTC 時間)
+  schedule: [{cron: "0 0 * * *"}]
+  # 讓你可以手動按按鈕觸發更新
+  workflow_dispatch:
+  push: {branches: ["master", "main"]}
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # 你的 Token 名稱
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # 圖片存檔名稱
+          filename: leetcode-stats.svg
+
+          # 基本設定 (隱藏 GitHub 基本資料，我們只要 LeetCode)
+          base: ""
+          
+          # --- LeetCode 設定 ---
+          plugin_leetcode: yes
+          plugin_leetcode_user: Matthiola
+          plugin_leetcode_sections: solved, skills, recent
+          # 如果你有參加競賽，可以把下面這行註解打開
+          # plugin_leetcode_sections: solved, skills, recent, rating
