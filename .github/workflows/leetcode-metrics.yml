@@ -1,31 +1,40 @@
-name: LeetCode Metrics
+name: Update LeetCode Stats
 on:
-  # 每天半夜 12 點自動更新 (UTC 時間)
-  schedule: [{cron: "0 0 * * *"}]
-  # 讓你可以手動按按鈕觸發更新
-  workflow_dispatch:
-  push: {branches: ["master", "main"]}
+  schedule: [{cron: "0 0 * * *"}] # 每天跑一次
+  workflow_dispatch:               # 手動觸發
 
 jobs:
-  github-metrics:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          # 你的 Token 名稱
-          token: ${{ secrets.METRICS_TOKEN }}
+          python-version: '3.9'
 
-          # 圖片存檔名稱
-          filename: leetcode-stats.svg
+      - name: Install dependencies
+        # 同時安裝畫圖需要的套件
+        run: |
+          pip install requests pandas matplotlib calplot
 
-          # 基本設定 (隱藏 GitHub 基本資料，我們只要 LeetCode)
-          base: ""
-          
-          # --- LeetCode 設定 ---
-          plugin_leetcode: yes
-          plugin_leetcode_user: Matthiola
-          plugin_leetcode_sections: solved, skills, recent
-          # 如果你有參加競賽，可以把下面這行註解打開
-          # plugin_leetcode_sections: solved, skills, recent, rating
+      - name: Draw Calendar Heatmap
+        # 假設你剛剛那個熱力圖腳本叫 draw_calendar.py
+        run: python draw_calendar.py
+
+      - name: Draw Rating Graph
+        # 執行這次新增的積分圖腳本
+        run: python draw_rating.py
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # 把產生的兩張圖都加入
+          git add leetcode-heatmap.png leetcode-rating.png
+          # 如果圖沒變，就不 Commit (避免報錯)
+          git commit -m "Update LeetCode Stats via Alfa API" || exit 0
+          git push
