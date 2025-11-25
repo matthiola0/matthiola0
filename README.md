@@ -22,7 +22,7 @@ Here are some ideas to get you started:
   <img src="gifs/1.gif" width="150"/>
 </div>
 -->
-My name is Po-Yu Pan, and you can call me Boy.
+My name is Po-Yu Pan. You can call me Boy, as it sounds similar to my Chinese name.
 * 🏫 Master of Science (M.S.) in Computer Science, Expected June 2027
     * National Cheng Kung University, Tainan, Taiwan
 * 🏫 Bachelor of Science (B.S.) in Interdisciplinary Program of Science, 2025
@@ -71,10 +71,21 @@ My name is Po-Yu Pan, and you can call me Boy.
   <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" height="30" alt="vim logo"  /></code>
 </div>
 
+<!--
+## LeetCode
+<p align="center">
+  <img src="https://leetcard.jacoblin.cool/Matthiola?theme=dark&font=Inter" width="48%" />
+  
+  <img src="https://leetcode.cl2333.workers.dev/api/render/Matthiola?theme=dark" width="48%" />
+</p>
+-->
+
+<!--
 ##
 <div id="header" align="center">
   <img src="gifs/2.gif" width="400"/>
 </div>
+-->
 
 ## My Snake 
 ![snakey](https://raw.githubusercontent.com/matthiola0/matthiola0.github.io/output/github-contribution-grid-snake-dark.svg)
