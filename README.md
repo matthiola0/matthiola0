@@ -26,7 +26,7 @@ My name is Po-Yu Pan. You can call me Boy, as it sounds similar to my Chinese na
 * 🏫 Master of Science (M.S.) in Computer Science, Expected June 2027
     * National Cheng Kung University, Tainan, Taiwan
 * 🏫 Bachelor of Science (B.S.) in Interdisciplinary Program of Science, 2025
-    * National Tsing Hau University, Hsinchu, Taiwan
+    * National Tsing Hua University, Hsinchu, Taiwan
 * 👤 Website: [Click Here !!!](https://matthiola0.github.io/)
 * 📫 How to reach me: You can email me by <abc35100762@gmail.com>
 
@@ -76,30 +76,40 @@ My name is Po-Yu Pan. You can call me Boy, as it sounds similar to my Chinese na
 </div>
 
 
-## My Algorithm Journey
-<div>
-  <img src="https://leetcard.jacoblin.cool/Matthiola?theme=forest&font=Baloo%202&ext=heatmap" height="250" alt="LeetCode Stats" />&nbsp;&nbsp;&nbsp;
-  <a href="https://leetcode.com/Matthiola/">
-    <img src="assets/leetcode-rating.png" height="250" alt="Contest Rating" />
-  </a>
-</div>
+## 🚀 My Algorithm Journey
+<table align="center" style="border: none;">
+  <tr>
+    <td align="center" width="50%" style="border: none;">
+      <img src="https://leetcard.jacoblin.cool/Matthiola?theme=forest&font=Baloo%202&ext=heatmap" width="100%" alt="LeetCode Stats" />
+    </td>
+    <td align="center" width="50%" style="border: none;">
+      <a href="https://leetcode.com/Matthiola/">
+        <img src="assets/leetcode-rating.png" width="100%" alt="Contest Rating" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+## 📊 GitHub Analytics
+<table style="border: none;">
+  <tr>
+    <td align="center" width="50%" style="border: none;">
+      <img src="assets/github-stats.svg" alt="General Stats" width="100%" />
+    </td>
+    <td align="center" width="50%" style="border: none;">
+      <img src="assets/languages.svg" alt="Language Stats" width="100%" />
+    </td>
+  </tr>
+</table>
 
 
-<!--
-<h2>📊 GitHub Analytics</h2>
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=matthiola0&theme=moltack&hide_border=false&show_icons=true" height="165" alt="stats graph" />
-
-  <img width="5" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matthiola0&theme=moltack&hide_border=false&count_private=true&layout=compact" height="165" alt="languages graph" />
-</div>
--->
-
-## GitHub Trophies
+## 🏆 GitHub Trophies
 ![trophy](https://github-profile-trophy.vercel.app/?username=matthiola0&theme=alduin&no-frame=false&no-bg=true&margin-w=2&rank=-?,-C) 
 
-
+<!--
 ## My Snake 
 ![snakey](https://raw.githubusercontent.com/matthiola0/matthiola0.github.io/output/github-contribution-grid-snake-dark.svg)
+-->
 
 
 <!--
