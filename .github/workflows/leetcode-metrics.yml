@@ -23,11 +23,11 @@ jobs:
 
       - name: Draw Calendar Heatmap
         # 假設你剛剛那個熱力圖腳本叫 draw_calendar.py
-        run: python draw_calendar.py
+        run: python scripts/draw_calendar.py
 
       - name: Draw Rating Graph
         # 執行這次新增的積分圖腳本
-        run: python draw_rating.py
+        run: python scripts/draw_rating.py
 
       - name: Commit and Push
         run: |
