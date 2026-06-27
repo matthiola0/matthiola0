@@ -126,7 +126,7 @@ README.
 
 
 ## 🏆 GitHub Trophies
-![trophy](https://github-profile-trophy.vercel.app/?username=matthiola0&theme=alduin&no-frame=false&no-bg=true&margin-w=2&rank=-?,-C)
+![trophy](https://github-profile-trophy-ten-delta.vercel.app/?username=matthiola0&theme=alduin&no-frame=false&no-bg=true&margin-w=2&rank=-?,-C)
 
 <!--
 ## My Snake
