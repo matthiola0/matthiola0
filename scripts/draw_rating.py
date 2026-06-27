@@ -1,9 +1,10 @@
-import requests
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from datetime import datetime
 import sys
 import os
+
+from leetcode_api import fetch_json
 
 # --- 設定區 ---
 USERNAME = "Matthiola"
@@ -13,23 +14,16 @@ START_FILTER_DATE = datetime(2025, 9, 1) # 依照你上次的要求
 print(f"Fetching data from {API_URL}...")
 
 try:
-    headers = {'User-Agent': 'Mozilla/5.0'}
-    response = requests.get(API_URL, headers=headers, timeout=30)
-    
-    if response.status_code != 200:
-        print(f"Error: API status {response.status_code}")
-        sys.exit(1)
-
-    data = response.json()
+    data = fetch_json(API_URL)
     if 'contestHistory' not in data:
-        print("Error: 'contestHistory' not found.")
-        sys.exit(1)
-        
+        # 結構不對通常代表 API 回了錯誤頁，視為暫時不可用而非致命錯誤
+        print("Skipping update: 'contestHistory' not found in response.")
+        sys.exit(0)
     history = data['contestHistory']
-
 except Exception as e:
-    print(f"Error: {e}")
-    sys.exit(1)
+    # 第三方 API 暫時掛掉不該擋 CI：保留上一次的圖，正常結束。
+    print(f"Skipping update (API unavailable): {e}")
+    sys.exit(0)
 
 # --- 資料處理與過濾 ---
 print("Filtering data...")
