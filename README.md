@@ -52,6 +52,7 @@ Open-source contributor to [Hummingbot](https://github.com/hummingbot/hummingbot
 
 </details>
 
+<!--
 ## 🛠️ Selected Projects
 
 * **[poker-hand-review](https://github.com/matthiola0/poker-hand-review)** — An
@@ -66,6 +67,7 @@ Open-source contributor to [Hummingbot](https://github.com/hummingbot/hummingbot
   walk-forward cross-sectional ML study using linear models, LightGBM, and
   XGBoost, with SHAP analysis, transaction-cost-aware backtesting, cross-market
   checks, and sector/beta neutralization.
+-->
 
 ## 🔬 Research Focus
 
