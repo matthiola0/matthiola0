@@ -4,9 +4,10 @@
 
 You can call me Boy, as it sounds similar to my Chinese name.
 
-M.S. Computer Science candidate at National Cheng Kung University, focused on
-systems and network software, concurrency, and performance engineering.
-Open-source contributor to [Hummingbot](https://github.com/hummingbot/hummingbot).
+M.S. Computer Science student at National Cheng Kung University, researching
+packet classification in CIAL (Computer & Internet Architecture Lab). Outside
+the lab, I build backend and AI agent systems at hackathons and contribute to
+open source.
 
 * 🎓 Expected graduation: **August 2027** · Available to start: **September 2027**
 * 👤 Website: [matthiola.dev](https://matthiola.dev)
@@ -16,58 +17,29 @@ Open-source contributor to [Hummingbot](https://github.com/hummingbot/hummingbot
 
 * **M.S. in Computer Science** — National Cheng Kung University, Tainan, Taiwan
     * Expected Aug 2027
-* **B.S. in Interdisciplinary Program of Science** — National Tsing Hua University, Hsinchu, Taiwan
+* **B.S. in Interdisciplinary Program of Sciences** — National Tsing Hua University, Hsinchu, Taiwan
     * 2025
+
+## 🛠️ Hackathon Projects
+
+* 🥉 **[First Aid Copilot](https://github.com/matthiola0/mchackathon)** — Third place, Google track, 2026 Hsinchu x Meichu Hackathon<br>
+  Five of us built it in about 30 hours. I owned the rules and data side: a
+  Python rule engine that chooses the first-aid steps, AED open-data ingestion
+  with route estimates and automatic reassignment, and the PostgreSQL data layer.
+* **[MAXi](https://github.com/demo-or-die/maxi)** — Finalist, AIWave: Taiwan Generative AI Applications Hackathon<br>
+  I built the multi-agent war room, where six agents run concurrently on Amazon
+  Bedrock and stream results over Server-Sent Events.
+* **[BitoGuard](https://github.com/demo-or-die/Bitopro_Hackathon_web)** — Finalist, Agent for Truth: Disinformation Defense Hackathon<br>
+  I built the FastAPI backend, the React and D3.js risk dashboard, and the AWS
+  design around my teammates' LightGBM model.
 
 ## 🌱 Open Source Contributions
 
-**[Hummingbot](https://github.com/hummingbot/hummingbot)** — upstream contributions
-
-* ✅ **Merged — [#8338: Ensure candle requests always span at least one interval](https://github.com/hummingbot/hummingbot/pull/8338)**
-  Fixed zero-width historical candle requests caused by `limit=0` on
-  sub-interval ranges and pagination boundaries. Clamped each request to at
-  least one candle interval, added boundary-candle deduplication, and
-  introduced six regression tests. The complete candles test suite passed with
-  1,263 tests.
-
-<details>
-<summary>🔍 <strong>Pull requests currently under review</strong></summary>
-
-<br>
-
-* **Under review — [#8410: Prevent an XEMM maker-order race between the control loop and fill events](https://github.com/hummingbot/hummingbot/pull/8410)**
-  Proposed a lifecycle-safe cancellation flow that keeps the tracked maker
-  order until exchange confirmation, so stale asynchronous work cannot cancel
-  an already-filled order or leave a fill unhedged.
-
-* **Under review — [#8411: Prevent partial balance snapshots during Bybit Perpetual refresh](https://github.com/hummingbot/hummingbot/pull/8411)**
-  Proposed constructing refreshed balances in local dictionaries and publishing
-  the completed snapshot atomically, so concurrent readers see either the
-  previous complete state or the new complete state.
-
-* **Under review — [#8407: Ignore duplicate stop actions for terminated or shutting-down executors](https://github.com/hummingbot/hummingbot/pull/8407)**
-  Proposed idempotent stop handling so repeated shutdown actions do not
-  re-enter cleanup logic, raise state errors, or overwrite an executor's
-  existing close reason.
-
-</details>
-
-<!--
-## 🛠️ Selected Projects
-
-* **[poker-hand-review](https://github.com/matthiola0/poker-hand-review)** — An
-  offline hand-history analysis tool with a Python CLI, local Web UI, tolerant
-  parser, decision-grading engine, pluggable solver interface, automated tests,
-  and CI.
-* **[qtools](https://github.com/matthiola0/qtools)** — A reusable Python
-  research toolkit with unified US, Taiwan, and crypto data loaders, a
-  vectorized backtest engine, cost models, factor/performance metrics, a CLI,
-  and 42 unit tests.
-* **[ml-cross-sectional](https://github.com/matthiola0/ml-cross-sectional)** — A
-  walk-forward cross-sectional ML study using linear models, LightGBM, and
-  XGBoost, with SHAP analysis, transaction-cost-aware backtesting, cross-market
-  checks, and sector/beta neutralization.
--->
+* ✅ **Merged — [sysprog21/codetrial#86: Add ordered Gemini credential failover](https://github.com/sysprog21/codetrial/pull/86)**<br>
+  codetrial is a live technical-interview simulator written in Rust. I added an
+  ordered list of Gemini API keys, so when a key is rejected or runs out of
+  quota, the interview moves to the next one and stays in its LiveKit room. The
+  PR also adds shared cooldowns, bounded retries, and unit and integration tests.
 
 ## 🔬 Research Focus
 
@@ -77,10 +49,11 @@ performance evaluation.
 
 ## 🎯 Technical Focus
 
-* **Languages:** C++, Python
+* **Languages:** C++, Python, Rust
 * **Systems:** Linux, networking, concurrency, performance benchmarking
+* **Cloud and web:** AWS, React
 * **Tools:** Git, Docker, GitHub Actions, CMake
-* **ML:** PyTorch, scikit-learn
+* **ML:** PyTorch, Ray
 
 ## 💻 Tech Stack
 <div align="left">
@@ -90,37 +63,27 @@ performance evaluation.
   <img width="12" />
   <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  /></code>
   <img width="12" />
-  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="30" alt="torch logo"  /></code>
+  <code><img src="https://skillicons.dev/icons?i=rust" height="30" alt="rust logo"  /></code>
   <img width="12" />
-  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" height="30" alt="sk-learn logo"  /></code>
-  <img width="12" />
-  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" height="30" alt="conda logo"  /></code>
-  <br />
-  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  /></code>
-  <img width="12" />
-  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  /></code>
+  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="typescript logo"  /></code>
   <img width="12" />
   <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  /></code>
   <img width="12" />
   <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo"  /></code>
   <img width="12" />
-  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30" alt="nodejs logo"  /></code>
-  <img width="12" />
-  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="30" alt="npm logo"  /></code>
-
-  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git logo"  /></code>
-  <img width="12" />
-  <code><img src="https://skillicons.dev/icons?i=github" height="30" alt="github logo"  /></code>
-  <img width="12" />
-  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="30" alt="gitlab logo"  /></code>
+  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="30" alt="torch logo"  /></code>
+  <br />
+  <code><img src="https://skillicons.dev/icons?i=aws" height="30" alt="aws logo"  /></code>
   <img width="12" />
   <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30" alt="docker logo"  /></code>
-  <img width="12" />
-  <code><img src="https://skillicons.dev/icons?i=mysql" height="30" alt="mysql logo"  /></code>
   <img width="12" />
   <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="linux logo"  /></code>
   <img width="12" />
   <code><img src="https://cdn.simpleicons.org/ubuntu/E95420" height="30" alt="ubuntu logo"  /></code>
+  <img width="12" />
+  <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git logo"  /></code>
+  <img width="12" />
+  <code><img src="https://skillicons.dev/icons?i=github" height="30" alt="github logo"  /></code>
   <img width="12" />
   <code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" height="30" alt="vim logo"  /></code>
   <img width="12" />
